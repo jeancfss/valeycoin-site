@@ -1,3 +1,46 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-gray-100 text-gray-800 p-8">
+      <div className="max-w-3xl mx-auto">
+        <h1 className="text-4xl font-bold mb-4 text-blue-600">ValeyCoin</h1>
+        <p className="mb-6 text-lg">
+          A moeda digital da inovação, da liberdade e do futuro. Descentralizada, segura e feita para transformar.
+        </p>
+
+        <button className="mb-10 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+          Adicionar à Metamask
+        </button>
+
+        <section className="mb-8">
+          <h2 className="text-2xl font-semibold mb-2">Descentralização Real</h2>
+          <p>Nenhum governo ou empresa controla a ValeyCoin. A rede é da comunidade.</p>
+        </section>
+
+        <section className="mb-8">
+          <h2 className="text-2xl font-semibold mb-2">Tecnologia Avançada</h2>
+          <p>Desenvolvida com o padrão ERC20, já preparada para integração futura com a SeyraChain.</p>
+        </section>
+
+        <section className="mb-8">
+          <h2 className="text-2xl font-semibold mb-2">Foco Humanitário</h2>
+          <p>Parte da missão é financiar curas, avanços científicos e soluções globais pela Seyra Foundation.</p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-2">Roadmap</h2>
+          <ul className="list-disc pl-6 space-y-1">
+            <li>✅ Criação da ValeyCoin (ERC20)</li>
+            <li>🌐 Lançamento do site oficial</li>
+            <li>🔁 Integração com plataformas DeFi e bridges</li>
+            <li>🛠️ Desenvolvimento da SeyraChain</li>
+            <li>🌍 Expansão humanitária via Seyra Foundation</li>
+          </ul>
+        </section>
+
+        <footer className="mt-10 text-sm text-gray-500">
+          © 2025 ValeyCoin.org — Powered by Seyra
+        </footer>
+      </div>
+    </main>
+  )
+}
